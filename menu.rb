@@ -3,14 +3,27 @@
 # computer repeats users order
 # computer totals lunch items and displays total
 
-#maybe make class for main and side dishes?
-class Menu
-  attr_accessor :main, :side
+#maybe make separate class for main and side dishes?
 
-  def initialize(main,side)
-    @main = main
-    @side = side
+class Food
+  attr_accessor :name, :price
+
+  def initialize(name, price)
+    @name = name
+    @price = price
   end
+end
+
+class Entree > Food
+  def initialize 
+  end
+end
+
+class Side > Food
+  
+
+ 
+
 
 
 
